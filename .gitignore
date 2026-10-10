@@ -7,3 +7,7 @@ vite.config.ts.*
 .local/
 .local-tools/
 .env.local
+.env
+.env.*
+runtime_data/
+

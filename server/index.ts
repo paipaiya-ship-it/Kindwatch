@@ -14,7 +14,7 @@ declare module "http" {
 
 app.use(
   express.json({
-    limit: "5mb",
+    limit: "128kb",
     verify: (req, _res, buf) => {
       req.rawBody = buf;
     },
@@ -104,7 +104,7 @@ app.use((req, res, next) => {
       {
         port,
         host: "0.0.0.0",
-        reusePort: true,
+        reusePort: process.platform !== "win32",
       },
       () => {
         log(`serving on port ${port}`);
@@ -115,3 +115,4 @@ app.use((req, res, next) => {
     process.exit(1);
   }
 })();
+
