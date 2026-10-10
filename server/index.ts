@@ -62,8 +62,8 @@ app.use((req, res, next) => {
 
 (async () => {
   try {
-    if (!process.env.ANTHROPIC_API_KEY) {
-      console.warn("[startup] WARNING: ANTHROPIC_API_KEY is not set — /api/chat will return errors");
+    if (!process.env.OPENAI_API_KEY) {
+      console.warn("[startup] WARNING: OPENAI_API_KEY is not set — /api/chat will return errors");
     }
 
     await registerRoutes(httpServer, app);

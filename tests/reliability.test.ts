@@ -11,16 +11,17 @@ import { SYSTEM_PROMPT } from "../server/kindwatchPrompt";
 import { RequestLifecycle } from "../client/src/lib/requestLifecycle";
 
 const answer = { triage: "RED", redFlagAlert: "", content: "Seek urgent help.", showDisclaimer: false };
-const modelReply = (value: unknown = answer, stop = "end_turn") => new Response(JSON.stringify({
-  stop_reason: stop, content: [{ type: "text", text: JSON.stringify(value) }],
+const modelReply = (value: unknown = answer, status = "completed") => new Response(JSON.stringify({
+  status, output: [{ type: "message", role: "assistant", status: "completed",
+    content: [{ type: "output_text", text: JSON.stringify(value) }] }],
 }), { headers: { "Content-Type": "application/json" } });
 
 async function withServer(
   options: Parameters<typeof registerRoutes>[2],
   run: (post: (route: string, payload: unknown) => Promise<Response>) => Promise<void>,
 ) {
-  const previousKey = process.env.ANTHROPIC_API_KEY;
-  process.env.ANTHROPIC_API_KEY = "test-placeholder";
+  const previousKey = process.env.OPENAI_API_KEY;
+  process.env.OPENAI_API_KEY = "test-placeholder";
   const app = express();
   app.use(express.json({ limit: "128kb" }));
   const server = createServer(app);
@@ -36,8 +37,8 @@ async function withServer(
   } finally {
     server.closeAllConnections();
     await new Promise<void>(resolve => server.close(() => resolve()));
-    if (previousKey === undefined) delete process.env.ANTHROPIC_API_KEY;
-    else process.env.ANTHROPIC_API_KEY = previousKey;
+    if (previousKey === undefined) delete process.env.OPENAI_API_KEY;
+    else process.env.OPENAI_API_KEY = previousKey;
   }
 }
 
@@ -57,14 +58,21 @@ test("reset cancels the old request and prevents its reply or finalizer owning a
 
 test("the server owns the prompt and rejects oversized, injected, and malformed requests", async () => {
   let calls = 0;
-  await withServer({ fetchImpl: async (_url, options) => {
+  await withServer({ fetchImpl: async (url, options) => {
     calls++;
     const body = JSON.parse(String(options?.body));
-    assert.equal(body.system, SYSTEM_PROMPT);
+    assert.equal(url, "https://api.openai.com/v1/responses");
+    assert.equal((options?.headers as Record<string, string>).Authorization, "Bearer test-placeholder");
+    assert.equal(body.instructions, SYSTEM_PROMPT);
     assert.equal(body.model, CHAT_MODEL);
-    assert.equal(body.max_tokens, 1000);
-    assert.equal(body.messages.length, 6);
-    assert.equal(body.messages[1].content, JSON.stringify(answer));
+    assert.equal(body.max_output_tokens, 1000);
+    assert.equal(body.store, false);
+    assert.equal(body.reasoning.effort, "none");
+    assert.equal(body.text.format.type, "json_schema");
+    assert.equal(body.text.format.strict, true);
+    assert.equal(body.input.length, 6);
+    assert.equal(body.input[1].content, JSON.stringify(answer));
+    assert.equal(body.previous_response_id, undefined);
     return modelReply();
   } }, async post => {
     const messages = Array.from({ length: 6 }, (_, index) => ({
@@ -92,7 +100,11 @@ test("the server owns the prompt and rejects oversized, injected, and malformed 
 });
 
 test("truncated and invalid model answers are not shown as guidance", async () => {
-  for (const reply of [modelReply(answer, "max_tokens"), modelReply({ triage: "GREEN" })]) {
+  for (const reply of [modelReply(answer, "incomplete"), modelReply({ triage: "GREEN" }),
+    new Response(JSON.stringify({ status: "completed", output: [{ type: "message", role: "assistant", status: "completed",
+      content: [{ type: "refusal", refusal: "Synthetic refusal" }] }] })),
+    new Response(JSON.stringify({ error: { message: "Synthetic authentication failure" } }), { status: 401 }),
+  ]) {
     await withServer({ fetchImpl: async () => reply }, async post => {
       assert.equal((await post("/api/chat", { messages: [{ role: "user", content: "synthetic" }] })).status, 502);
     });

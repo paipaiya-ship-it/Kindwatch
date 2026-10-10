@@ -9,7 +9,7 @@ It offers caregiver guidance, model-generated triage, and feedback collection fo
 - `client/src/lib/requestLifecycle.ts`: cancellation and stale-response protection.
 - `server/kindwatchPrompt.ts`: clinical system prompt, moved unchanged from the original frontend.
 - `server/apiPolicy.ts`: approved model, prompt identifier, payload limits, and rate limiting.
-- `server/routes.ts`: Anthropic chat integration and feedback storage.
+- `server/routes.ts`: OpenAI chat integration and feedback storage.
 - `server/index.ts`: Express startup and API response logging.
 - `shared/chatPolicy.ts`: shared request size limits.
 - `script/`: development, production, and build entry points.
@@ -28,7 +28,7 @@ Use Node.js 20.19 or later. Install exact dependency versions:
 npm ci
 ```
 
-Set `ANTHROPIC_API_KEY` in the server environment (Replit Secrets when running there).
+Set `OPENAI_API_KEY` in the server environment (Render Environment when hosting there).
 Never put a key into browser code, GitHub, or a chat message.
 The app does not automatically load a local .env file.
 
@@ -50,7 +50,7 @@ Replit deployment must be initiated separately.
 ## Chat behavior and limits
 
 The browser sends only `messages`. The server owns the clinical prompt,
-`claude-sonnet-5-5`, and the 1,000 output-token limit.
+`gpt-6-luna`, and the 1,000 output-token limit.
 Attempts to supply a replacement system prompt, model, or token limit are rejected.
 
 To control cost, each request includes at most the last **six individual messages**,
@@ -104,13 +104,24 @@ npm run build
 npm run smoke
 ```
 
-Tests use synthetic data and an injected provider; they never call Anthropic.
+Tests use synthetic data and an injected provider; they never call OpenAI.
 They cover request tampering and limits, timeouts, incomplete output, rate limiting,
 feedback storage failures, and stale-response ownership after reset.
 
 ## Clinical review still required
 
-The clinical prompt is unchanged by these technical fixes.
+The clinical prompt is unchanged by these technical fixes and the OpenAI migration.
 The repository does not contain evidence of clinical validation.
 See `docs/clinical-review.md` for decisions and scenarios to review before release.
-Changing AI providers is a separate change requiring credentials and comparative evaluation.
+The OpenAI migration uses the Responses API with a strict JSON answer schema,
+`gpt-6-luna`, reasoning effort `none`, and `store: false`. This model is an initial
+cost-conscious evaluation choice, not a clinically validated selection. The
+1,000-token output cap and six-message history are preserved. No response chaining,
+provider conversation storage, tools, or automatic provider retries are used.
+`store: false` disables response storage for API retrieval; it does not guarantee
+zero retention of provider abuse-monitoring logs. Existing local evaluation logging
+is retained. Review provider data controls before submitting real health information.
+OpenAI API billing is separate from ChatGPT Pro; this app does not implement
+Sign in with ChatGPT plan usage. Live synthetic scenarios and clinician comparison
+against the previous provider are required before release. See
+https://developers.openai.com/api/docs/guides/your-data for data controls.

@@ -9,7 +9,7 @@ and its clinical prompt while applying the reviewed technical changes.
 1. Connect Render to the GitHub repository `paipaiya-ship-it/Kindwatch`.
 2. Create a Node Web Service using branch `codex/technical-safety-fixes`.
 3. Set build command to `npm ci && npm run build` and start command to `npm start`.
-4. Add `ANTHROPIC_API_KEY` as a secret environment variable in Render. Do not
+4. Add `OPENAI_API_KEY` as a secret environment variable in Render. Do not
    commit it to GitHub or paste it into chat.
 5. Review the selected hosting plan and its costs before creating the service.
 
@@ -33,7 +33,7 @@ the chosen protected storage mechanism. Keep these records out of a public repo.
 
 Once the move is verified, stop the old Replit deployment and review its
 subscription, usage limits, and credit auto-reload to prevent ongoing charges.
-Hosting and Anthropic API billing are separate from Replit Agent billing.
+Hosting and OpenAI API billing are separate from Replit Agent billing.
 
 References: https://render.com/docs/deploy-node-express-app and
 https://render.com/docs/free

@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { setTimeout as delay } from "node:timers/promises";
 
 const child = spawn(process.execPath, ["script/start.cjs"], {
-  env: { ...process.env, PORT: "5058", ANTHROPIC_API_KEY: "" },
+  env: { ...process.env, PORT: "5058", OPENAI_API_KEY: "" },
   windowsHide: true, stdio: ["ignore", "pipe", "pipe"],
 });
 let output = "";
