@@ -1,0 +1,61 @@
+“Replace the entire hallucinations scenario and add standalone triggers. Do not change anything else:
+DEFAULT HALLUCINATIONS RESPONSE:
+Triage: YELLOW — Monitor closely / follow up with clinician
+Hallucinations are more common in dementia than most people realize. Seeing or hearing things that aren’t there — deceased loved ones, children, animals — can be frightening to witness but is not always a crisis.
+The most important question first:
+Is your loved one distressed by what they are seeing or hearing — or are they calm? This changes everything about how to respond.
+If they are not distressed:
+	∙	You do not need to correct them or talk them out of it
+	∙	Simply being present and calm is often enough
+	∙	Entering their reality gently — acknowledging what they see without confirming or denying — is often the kindest response
+If they are distressed:
+	∙	Stay calm — your calm is contagious
+	∙	Reassure them they are safe — ‘I am right here, you are safe’
+	∙	Gently redirect — move to a different room, turn on lights, offer a familiar comfort
+	∙	Do not argue with what they are seeing — this increases distress without resolving anything
+	∙	Most distressing hallucinations can be deescalated without medication
+Practical environmental checks:
+	∙	Improve lighting — dim light makes hallucinations more likely especially in the evening
+	∙	Check for shadows, reflections, and patterns on wallpaper that can trigger visual misperceptions
+	∙	Cover or remove mirrors if they are seeing strangers in reflections
+Hallucinations do not automatically need medication:
+Episodic hallucinations that are not causing distress or safety concerns are often managed without medication. Medication decisions belong to their doctor — not every hallucination needs a prescription.
+When to mention to their doctor:
+	∙	Hallucinations that are new or increasing in frequency
+	∙	Consistently distressing and cannot be redirected
+	∙	Prominent or frequent — certain types of dementia are more associated with hallucinations and your doctor should know if this is a significant pattern
+	∙	Any concern about pain — undertreated pain can trigger or worsen hallucinations
+Red flags — contact their doctor today:
+	∙	Hallucinations involving commands to harm themselves or others
+	∙	Accompanied by fever, lethargy, or signs of infection
+	∙	Sudden new onset or acute change from baseline
+	∙	Accompanied by other signs of delirium — sudden confusion or significant behavior change
+What to tell their doctor:
+‘They have been seeing things that aren’t there. I want to describe what is happening and understand whether this needs treatment or whether we should monitor it — and rule out any underlying cause like pain or infection.’
+Add these as standalone triggers:
+TRIGGER 1: Activate when caregiver mentions seeing deceased loved ones, talking to someone who has passed, seeing a deceased spouse parent or relative:
+SEEING DECEASED LOVED ONES:
+This is one of the most common hallucinations in dementia — and for many people it is not distressing at all. Many people find comfort in these visits and feel peaceful during them.
+What to do:
+	∙	Do not tell them the person is dead — this causes fresh grief without any benefit
+	∙	If they seem comforted — let them be comforted
+	∙	If distressed — reassure gently and redirect
+	∙	‘That sounds like a lovely visit’ is a kind and appropriate response when they seem peaceful
+TRIGGER 2: Activate when caregiver mentions seeing animals, hearing animals, seeing children, children in the house, animals in the house, bugs or insects crawling:
+SEEING ANIMALS CHILDREN OR INSECTS:
+Visual hallucinations of animals and children are common and often not distressing — some people find them entertaining or comforting.
+What to do:
+	∙	Assess whether they are distressed or calm first
+	∙	If calm — no intervention needed
+	∙	If distressed — reassure, turn on lights, redirect to a different space
+	∙	Bugs or insects crawling on skin can be more distressing — reassure, redirect, and mention to their doctor if persistent
+TRIGGER 3: Activate when caregiver mentions pain and hallucinations, hallucinations got worse, new hallucinations, wondering what is causing hallucinations:
+PAIN AS A TRIGGER:
+Undertreated pain is an underrecognized trigger for hallucinations. People with dementia often cannot express pain verbally — hallucinations and behavioral changes are sometimes the only signal that something hurts.
+What to look for:
+	∙	Recent fall, new physical complaint, grimacing, guarding a body part
+	∙	Increased restlessness
+	∙	Recent medication changes
+What to tell their doctor:
+‘The hallucinations seem to have gotten worse recently. I want to make sure we are not missing an underlying cause like pain or infection before assuming this is just the dementia progressing.’
+Do not change anything else.”

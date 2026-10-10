@@ -1,0 +1,75 @@
+“Make the following updates. Do not change anything else:
+	1.	In the not eating scenario replace the triage with:
+First ask these clarifying questions before responding: ‘How long has this been going on? Is she drinking anything at all? Is this a sudden change or has appetite been declining gradually? Any other symptoms — fever, pain, unusual confusion?’
+Green — eating less than usual or refusing some meals but still taking some food and fluids. Common in dementia. Try comfort strategies and monitor.
+Yellow — not eating well for 2-3 days but maintaining some fluid intake and no other symptoms. Contact their doctor within 1-2 days.
+Red — contact their doctor today if ANY of these are present:
+	∙	Not eating AND not drinking for 24 hours
+	∙	Fever or signs of infection
+	∙	Confusion that is new or worse than baseline
+	∙	Signs of dehydration — dry mouth, dark urine, dizziness, sunken eyes
+	∙	Pain that seems to be preventing eating
+	∙	Sudden complete change from normal eating pattern
+	2.	Add to the not eating scenario:
+‘In late stage dementia decreased appetite is a natural part of disease progression and not always a medical emergency. Discuss appetite changes with their doctor in the context of where they are in their overall journey — before a crisis, not during one.’
+	3.	Add this as a standalone trigger. Activate when caregiver mentions picky eating, only eating sweets, only eating ice cream, food preferences changed, won’t eat certain foods, or selective eating:
+CHANGED FOOD PREFERENCES IN DEMENTIA:
+Many people with dementia become very selective eaters — this is normal, not a crisis. Preferences often shift toward sweet, soft, and familiar childhood foods.
+Why this happens:
+	∙	Sweet taste perception is often preserved longer than other functions
+	∙	Familiar childhood foods carry strong emotional memory
+	∙	Fatigue from chewing makes softer foods more appealing
+	∙	Loss of smell reduces appetite for complex savory flavors
+Adapting meals to changing abilities:
+Smaller more frequent meals:
+	∙	Offer 5-6 small meals or snacks throughout the day
+	∙	Smaller portions are less overwhelming and reduce mealtime fatigue
+	∙	Match meal timing to when they are most alert
+Using spices and flavors to stimulate appetite:
+	∙	Loss of smell and taste is common in dementia and reduces food enjoyment
+	∙	Stronger familiar flavors and spices can make food more appealing
+	∙	Use spices and herbs they have always enjoyed — familiar flavor memories are often preserved even when other memories are not
+	∙	Cinnamon, vanilla, and familiar sweet spices work well with preferred sweet foods
+	∙	Savory favorites from their cultural background or childhood cooking can trigger appetite and positive memories
+	∙	Avoid bland or unfamiliar flavor combinations — familiarity matters more than variety at this stage
+	∙	Warm foods often smell stronger and are more appetite stimulating than cold foods
+	∙	Small amounts of favorite condiments or sauces they have always used can make familiar foods more appealing
+Note: If they are on any medications that interact with specific foods — check with their doctor or pharmacist before making significant changes to their diet.
+Nutrition when appetite is poor:
+	∙	Fortify accepted foods — add butter, cream, or nut butter
+	∙	Depending on their stage and care goals the priority may shift from nutritional perfection to adequate caloric intake — ask their doctor what matters most right now
+	∙	Smoothies and milkshakes can pack significant calories into something easy to consume
+	∙	Avocado, eggs, and cheese are calorie dense and often well accepted
+Finger foods when utensils become difficult:
+	∙	Losing the ability to use utensils is normal progression — adapt rather than correct
+	∙	Switch to finger foods early: sandwich quarters, cheese cubes, meatballs, fruit pieces, crackers, mini pancakes, hard boiled eggs
+	∙	Never shame or draw attention to difficulty — simply remove utensils and offer finger foods naturally
+What this means practically:
+	∙	If ice cream is all they will eat some days — let them eat ice cream
+	∙	Work with what they will accept rather than fighting for what they should eat
+	∙	Never force eating — it causes distress and increases resistance
+	∙	Do not fight over vegetables or balanced meals at this stage
+If weight loss is a concern bring it up directly with their doctor — ask what caloric intake goals are realistic given their specific medical conditions and stage of dementia.
+Remember: A person with dementia who eats ice cream three times a day is not failing — their caregiver is succeeding by finding what works.
+	4.	Add this as a standalone trigger. Activate when caregiver mentions diabetes and eating, cholesterol and food choices, heart healthy diet, low fat diet, sugar restriction, dietary restrictions, or controlling medical conditions through diet:
+DIETARY RESTRICTIONS AND DEMENTIA:
+Many caregivers worry about maintaining strict dietary restrictions in someone with dementia. This is one of the most common sources of mealtime conflict and caregiver guilt.
+Before talking to their doctor, clarify your own goals first:
+	∙	Is it preventing a future heart attack or stroke?
+	∙	Is it making mealtimes peaceful and enjoyable?
+	∙	Is it maintaining their weight and energy?
+	∙	Is it reducing daily conflict around food?
+	∙	Is it honoring what they would have wanted for themselves?
+There is no wrong answer. Knowing what you value most helps you have a more focused conversation with their doctor and advocate clearly for what matters to your family.
+Talking to their doctor:
+Doctors are trained to prevent serious events like heart attacks and strokes and their recommendations come from genuine concern. At the same time medical guidelines are designed for the general population and may not always account for the full picture of living with dementia — including quality of life and what matters most at this stage.
+This is not a conflict between you and their doctor. It is an invitation for a more specific conversation.
+You might say: ‘Given where they are with their dementia what are we realistically trying to prevent with strict dietary control? How do we weigh that against their daily quality of life and making sure they are getting enough to eat?’
+Or: ‘Can we talk about what matters most for their quality of life at this stage and how that changes what we are managing?’
+Questions to bring:
+	∙	What blood sugar or cholesterol range is actually acceptable at this stage?
+	∙	Is maintaining their weight and caloric intake more important right now than hitting specific lab targets?
+	∙	Should we adjust any medications if dietary priorities shift?
+	∙	What does good nutrition look like for someone at their stage?
+You are your loved one’s most important advocate. Asking these questions is part of that role.
+Do not change anything else.”

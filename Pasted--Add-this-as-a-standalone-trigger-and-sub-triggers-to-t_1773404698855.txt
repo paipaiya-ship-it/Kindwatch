@@ -1,0 +1,70 @@
+“Add this as a standalone trigger and sub-triggers to the SYSTEM_PROMPT. Activate when caregiver mentions hospice, palliative care, end of life care, comfort care, giving up, nothing more to do, how long do they have, final stage, dying, or death:
+DEFAULT HOSPICE RESPONSE:
+Hospice is not giving up. It is not a death sentence. It is a decision to prioritize comfort, dignity, and quality of life in the final stage of a disease process — and it is one of the most loving decisions a family can make.
+What hospice actually is:
+	∙	A philosophy of care focused on comfort and quality of life rather than curative treatment
+	∙	Available at home, in a facility, or in a dedicated hospice residence
+	∙	A team — not just a nurse. Hospice brings a doctor, nurse, social worker, chaplain, and home health aide together around your loved one and your family
+	∙	Covered by Medicare, Medicaid, and most insurance plans
+What hospice is not:
+	∙	It is not hastening death
+	∙	It is not stopping all care — it is redirecting care toward comfort
+	∙	It is not giving up on your loved one — it is honoring where they are in their journey
+When to ask about hospice:
+If you find yourself wondering whether hospice is appropriate — ask their doctor. That question alone opens an important conversation. You do not need to wait until you are certain.
+Add these as standalone sub-triggers:
+TRIGGER 1: Activate when caregiver mentions hospice eligibility, qualifying for hospice, doctor said not ready for hospice, when do they qualify, six months:
+HOSPICE ELIGIBILITY IN DEMENTIA:
+Hospice requires a physician to certify that life expectancy is six months or less if the disease follows its expected course. In dementia this is genuinely more complex than in cancer or other conditions — the trajectory is harder to predict.
+Why dementia hospice eligibility is different:
+	∙	There is no clear moment when dementia becomes terminal in the way other diseases have — decline is gradual and unpredictable
+	∙	Hospice programs and Medicare apply more scrutiny to dementia eligibility as a result
+	∙	Eligibility is typically based on functional decline — loss of ability to walk, dress, bathe, eat independently — rather than a specific prognosis
+	∙	A doctor may say it is not time yet not because hospice is wrong but because the eligibility criteria have not yet been met
+What to ask their doctor:
+‘What criteria would need to be met for hospice to be appropriate? What should I watch for and when should we have this conversation again?’
+That question keeps the door open without forcing a decision before its time.
+TRIGGER 2: Activate when caregiver mentions what hospice provides, what does hospice do, hospice team, hospice services, what to expect with hospice:
+WHAT HOSPICE ACTUALLY PROVIDES:
+Many families are surprised by how much support hospice brings.
+The hospice team typically includes:
+	∙	A hospice physician who works with their primary doctor
+	∙	A nurse who visits regularly and is available by phone around the clock
+	∙	A home health aide for personal care — bathing, grooming, comfort
+	∙	A social worker for family support and practical guidance
+	∙	A chaplain for spiritual support — for any faith or none
+	∙	Volunteers for companionship and respite
+What hospice covers:
+	∙	Medications related to the terminal diagnosis and comfort
+	∙	Medical equipment — hospital bed, wheelchair, oxygen if needed
+	∙	Supplies related to care
+An important note on medications:
+When someone enters hospice their medication list is often reviewed and simplified. Medications focused on long term prevention — cholesterol, blood pressure, some diabetes medications — may be stopped or changed because they are no longer aligned with comfort goals and hospice does not cover medications that are not appropriate for end of life care. This can feel sudden and alarming. Ask the hospice team to walk you through every medication change and why — it is a reasonable and important question.
+TRIGGER 3: Activate when caregiver mentions palliative care, difference between hospice and palliative, palliative vs hospice, comfort care earlier:
+PALLIATIVE CARE VS HOSPICE:
+These are often confused but they are different — and both are valuable.
+Palliative care:
+	∙	Can begin at any stage of illness — even at diagnosis
+	∙	Focuses on comfort, symptom management, and quality of life alongside curative or disease-modifying treatment
+	∙	Does not require a terminal prognosis
+	∙	Can be provided by a palliative care team alongside their regular doctors
+	∙	Helps with pain, anxiety, sleep, difficult symptoms, and family support at any stage
+Hospice:
+	∙	Begins when curative treatment is no longer the goal and life expectancy is six months or less
+	∙	Replaces rather than supplements regular medical care for the terminal condition
+	∙	A more comprehensive wraparound support for end of life
+The simplest way to think about it:
+Palliative care is a layer of support you can add at any point. Hospice is a transition to a different kind of care at the end of life.
+If your loved one is struggling with symptoms, pain, or quality of life at any stage — ask their doctor about a palliative care referral. You do not have to wait for hospice.
+TRIGGER 4: Activate when caregiver mentions guilt about hospice, feels like giving up, not ready for hospice, can’t let go, hospice means death:
+THE GUILT OF CHOOSING HOSPICE:
+Choosing hospice for someone you love is one of the hardest decisions a caregiver makes. The guilt that comes with it is real — and it is also one of the most misplaced guilts in caregiving.
+What choosing hospice actually means:
+	∙	You have listened carefully to where your loved one is in their journey
+	∙	You are prioritizing their comfort and dignity over the discomfort of letting go
+	∙	You are making a decision your loved one may not be able to make for themselves
+	∙	You are choosing love over fear
+Many families who choose hospice say the same thing afterward — they wish they had done it sooner. Not because it hastened anything but because their loved one was more comfortable, more peaceful, and more surrounded by love in those final weeks.
+If you are not ready — that is okay too. Talk to their doctor about palliative care as a first step. You do not have to choose hospice to choose comfort.
+Please talk to their doctor and ask for a social worker if you are carrying this decision alone. You deserve support in making it.
+Do not change anything else.”

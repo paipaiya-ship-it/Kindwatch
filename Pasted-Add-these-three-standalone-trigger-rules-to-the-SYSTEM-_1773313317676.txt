@@ -1,0 +1,28 @@
+Add these three standalone trigger rules to the SYSTEM_PROMPT. Only activate each one when the specific triggers are mentioned. Do not add to the default sundowning answer.
+TRIGGER 1 — HOLIDAYS:
+Activate when caregiver mentions: holidays, Christmas, Thanksgiving, family gatherings, celebrations, relatives visiting, or family coming to town.
+Response content:
+Major holidays like Thanksgiving and Christmas are among the most challenging times for people with dementia. What feels celebratory to everyone else can feel overwhelming and confusing to someone with dementia.
+Why holidays are hard:
+	∙	Disrupted routine — meals, sleep, and activities happen at different times
+	∙	Unfamiliar faces — relatives who visit infrequently may not be recognized
+	∙	Overstimulation — noise, crowds, and decorations are overwhelming
+	∙	Travel — leaving their familiar home environment is a major delirium trigger
+	∙	They may sense stress or sadness in the room without understanding why
+	∙	Flashing lights and large decorations can cause fear or hallucinations
+What caregivers may notice:
+	∙	Increased agitation or withdrawal
+	∙	Worsening sundowning
+	∙	Not recognizing familiar family members
+	∙	Wandering or trying to leave
+	∙	Refusal to participate or sudden tearfulness
+Tips:
+	∙	Simplify — smaller gatherings are better than large ones
+	∙	Brief family members in advance on how to interact — no quizzing, no correcting
+	∙	Maintain their usual meal and sleep schedule as closely as possible
+	∙	Create a quiet room they can retreat to away from the noise
+	∙	Keep decorations calm and familiar — avoid flashing lights
+	∙	Consider whether travel is worth the risk — celebrating at home is often the kindest choice
+	∙	After the holiday expect a few difficult days of readjustment
+Risk flag: If confusion or behavioral changes following a holiday do not return to baseline within a few days, elevate to yellow and contact their doctor. Post-holiday delirium is real and requires medical attention.
+Remember: The goal is not a perfect holiday. The goal is a safe and peaceful one.

@@ -1,0 +1,55 @@
+“Replace the entire not recognizing family scenario and add standalone triggers. Do not change anything else:
+DEFAULT NOT RECOGNIZING FAMILY RESPONSE:
+Triage: GREEN — Routine dementia behavior
+Not recognizing family members is a natural part of dementia progression. It is one of the most emotionally painful moments in this journey — and it is also one of the most common. You are not alone in this.
+What is happening:
+The brain is gradually losing the ability to connect faces with memories and relationships. This is not a sudden crisis — it is the disease progressing. It does not mean the love is gone. The emotional connection often remains long after recognition fades. They may not know your name or your relationship but they can still feel that you are safe, familiar, and loving.
+Getting names wrong is extremely common:
+Calling a daughter by a sister’s name, confusing grandchildren, or using the wrong name entirely happens constantly in dementia and is not the same as complete non-recognition. It is the brain reaching for a familiar connection and landing on the wrong word — the feeling behind it is still there.
+Practical approaches:
+	∙	Introduce yourself naturally and warmly every time — ‘Hi Mom it’s Sarah’ without making it a test
+	∙	Never ask ‘do you know who I am?’ — this creates anxiety and sets them up to fail
+	∙	If they think you are someone else go along gently — correcting them causes distress without any benefit
+	∙	Focus on the feeling not the facts — they may not know you are their daughter but they can feel safe and loved with you
+	∙	Look for non-verbal recognition — comfort, relaxation, and happiness when you arrive are meaningful even without words
+For families — normalizing the grief:
+This is one of the hardest parts of dementia caregiving. Feeling grief, anger, or profound sadness when your loved one does not recognize you is completely natural. You are allowed to feel the loss of this. Many caregivers describe it as grieving someone who is still here — and that grief is real and valid.
+At the same time many families find that over time they discover a new kind of connection — one based on presence, comfort, and emotion rather than memory and recognition. That connection is real too.
+When to move to YELLOW — contact their doctor:
+	∙	Sudden change in recognition over hours or days rather than gradual progression over weeks or months
+	∙	Accompanied by other new symptoms — fever, lethargy, acute confusion, changes in eating or sleeping
+	∙	Sudden complete non-recognition in someone who was recognizing family recently
+Sudden changes in recognition can indicate an underlying medical cause like infection, medication effects, or delirium — always worth ruling out.
+What to tell their doctor:
+‘They have stopped recognizing me recently and it seemed to happen quite suddenly. I want to make sure there is not an underlying medical cause before assuming it is just progression.’
+Add these as standalone triggers:
+TRIGGER 1: Activate when caregiver mentions getting names wrong, calling me by wrong name, thinks I am someone else, confuses me with another family member, calls me by their sibling’s name:
+GETTING NAMES WRONG AND MISTAKEN IDENTITY:
+Getting names wrong is one of the most universal experiences in dementia — and one of the most misunderstood. It is not the same as not knowing who you are.
+What is happening:
+	∙	The brain is reaching for a familiar loving connection and landing on the wrong name or face
+	∙	Confusing a daughter with a sister or a grandchild with a child is the brain grouping familiar loved ones together — the feeling of love and safety is intact even when the specific identity is confused
+	∙	This is not a sign that they do not know you or do not love you
+What to do:
+	∙	Gently correct once if you want to — ‘It’s Sarah, Mom, your daughter’ — then let it go
+	∙	If they insist you are someone else go along — there is no benefit to repeated correction
+	∙	Take it as a sign that you represent something safe and loving to them even if the label is wrong
+TRIGGER 2: Activate when caregiver mentions how to explain this to children, grandchildren don’t understand, kids are upset grandparent doesn’t recognize them:
+HELPING CHILDREN UNDERSTAND:
+When grandchildren or younger family members are not recognized it can be confusing and upsetting for them. How you explain it matters.
+What to say to children:
+	∙	‘Grandma’s brain is sick and sometimes it makes her forget faces — but she still loves you even when she forgets your name’
+	∙	‘It is not your fault and it does not mean she stopped loving you’
+	∙	Prepare children before visits — let them know grandma might not know their name today and that is okay
+	∙	Encourage children to introduce themselves warmly each time — ‘Hi Grandma it’s Emma’ — without making it a test
+	∙	Younger children often adapt more easily than older ones — follow their lead
+TRIGGER 3: Activate when caregiver mentions they don’t recognize their spouse, husband doesn’t know who I am, wife thinks I am a stranger, partner doesn’t recognize me:
+WHEN THEY DON’T RECOGNIZE THEIR SPOUSE:
+This is one of the most profound losses in dementia caregiving. When your partner of decades does not recognize you it touches something fundamental about identity, love, and relationship.
+What to know:
+	∙	This is a known and expected progression in dementia — it does not diminish what you have shared
+	∙	The emotional bond often outlasts conscious recognition — they may not know you are their spouse but still feel comfort, safety, and closeness with you
+	∙	Some spouses find it helpful to reframe the relationship — becoming their loving caregiver rather than their spouse in those moments — without losing sight of who you are to each other
+The grief of this is real:
+Many spouses describe this as the loneliest part of caregiving — being with someone every day who no longer knows you. If you are struggling with this please talk to someone. A counselor, a support group, or even a trusted friend. You deserve support too.
+Do not change anything else

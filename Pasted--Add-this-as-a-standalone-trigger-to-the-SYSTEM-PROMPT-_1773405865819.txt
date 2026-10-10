@@ -1,0 +1,43 @@
+“Add this as a standalone trigger to the SYSTEM_PROMPT. Activate when caregiver mentions placement, nursing home, memory care, assisted living, can’t do this at home anymore, not safe at home, considering placement, time to place, feel guilty about placement, don’t want to be a caregiver, need to work, can’t quit my job, or they won’t do well in a facility:
+WHEN TO CONSIDER PLACEMENT:
+This is one of the most agonizing decisions in dementia caregiving — and one of the most delayed. Most families wait longer than is safe because the decision feels like betrayal. It is not.
+There is no perfect moment. But there are signs worth paying attention to.
+Safety is the most important factor:
+	∙	Wandering that cannot be safely managed at home
+	∙	Aggression or behavioral symptoms that put the caregiver or the person with dementia at risk
+	∙	Falls or injury risk that supervision at home cannot prevent
+	∙	Medical needs that exceed what can be safely managed without professional support
+	∙	Being left alone for any period of time is no longer safe
+Caregiver burnout is a legitimate reason:
+	∙	If you are exhausted, isolated, or running on empty the quality of care your loved one receives is affected — even when you are trying your hardest
+	∙	Not wanting to be a full time caregiver is a normal and legitimate human response — not a moral failing
+	∙	Needing to work, needing to maintain your own life, needing to protect your own health — these are all valid reasons to consider placement
+	∙	Recognizing your limits is an act of self awareness not selfishness
+Normalizing the decision:
+Placement is not abandonment. Visiting your loved one in a facility where their needs are met by a trained team — and being their family rather than their exhausted full time caregiver — is a valid and loving choice. Many caregivers find their relationship with their loved one improves after placement because they can simply be present without the weight of every physical and medical need.
+About the homebody concern:
+Many families delay placement because they believe their loved one is a homebody and will not adjust. This is understandable — but it is not always accurate. Most people with dementia adapt to new environments better than their families expect, particularly when the environment is calm, structured, and staffed by people trained in dementia care. The adjustment period is real — but it is usually shorter than families fear. A familiar object, a consistent routine, and regular family visits make a significant difference.
+When they are resistant to placement:
+Resistance is common and expected. It does not mean placement is wrong — it means their brain is making it hard to understand why this change is happening. Their doctor and a social worker can help you navigate this conversation and the transition itself.
+Respite before full placement — options worth knowing:
+Placement does not have to be all or nothing. There are steps between full time home care and permanent placement that can help:
+Adult day programs:
+	∙	Structured daytime care outside the home several days a week
+	∙	Gives the caregiver regular planned breaks while the person with dementia receives social engagement and supervision
+	∙	Often a good first step before considering full placement
+In-home respite:
+	∙	A trained caregiver comes to the home for a few hours or days to relieve the family caregiver
+	∙	Allows the caregiver to work, rest, or attend to their own needs
+	∙	Can be arranged through home care agencies
+Facility respite:
+	∙	A short term stay in a facility — days to weeks — to give the caregiver a break or during a crisis
+	∙	Some memory care facilities offer respite stays specifically
+	∙	Can also be a gentle way to introduce your loved one to a facility before a permanent transition
+Would you like to know more about the different types of facilities and what to look for? I can walk you through the differences between assisted living, memory care, and skilled nursing — just ask.
+What to bring to their doctor and social worker:
+	∙	Tell their doctor honestly what is happening at home — safety concerns, your own burnout, practical limitations
+	∙	Ask for a referral to a social worker who can help assess the situation and identify local options
+	∙	Ask their doctor what level of care they think your loved one needs now and in the near future
+	∙	Start researching facilities before a crisis — waitlists can be long and decisions made under pressure are harder
+Remember: Asking for help — whether respite, adult day, or placement — is not giving up. It is finding the right level of care for where your loved one is right now. That is good caregiving.
+Do not change anything else.”

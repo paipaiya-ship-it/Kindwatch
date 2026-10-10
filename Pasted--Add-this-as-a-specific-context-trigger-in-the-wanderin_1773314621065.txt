@@ -1,0 +1,28 @@
+“Add this as a specific context trigger in the wandering scenario. Activate when caregiver mentions vacation, travel, hotel, resort, cruise, or being away from home:
+WANDERING ON VACATION OR TRAVEL:
+Vacation is the highest risk setting for wandering and elopement in people with dementia. Unfamiliar environments remove every orienting landmark they rely on at home.
+Why vacation wandering is more dangerous:
+	∙	No familiar landmarks to help them find their way back
+	∙	Nobody in the area recognizes them
+	∙	Hotels and resorts have multiple exits that are impossible to monitor
+	∙	Caregiver may be more relaxed and less vigilant than at home
+	∙	Pool, beach, traffic, and other hazards may be closer than at home
+	∙	Language barriers if traveling internationally
+Prevention tips specific to vacation:
+	∙	Book a ground floor room only if there is no pool or traffic risk — otherwise higher floors with elevator access reduce independent exit risk
+	∙	The moment you arrive scope all exits and hazards before unpacking
+	∙	Never leave them unsupervised in the hotel room — they may not be able to find their way back if they step outside
+	∙	Use a portable door alarm on the hotel room door every night without exception
+	∙	Ensure their GPS wearable is charged and active every single day
+	∙	Keep that recent photo on your phone updated and accessible
+	∙	Brief hotel staff at check in that your loved one has dementia and may wander
+	∙	Choose destinations with contained environments — a small resort over a large city
+Risk flags:
+Yellow — disoriented in the hotel or resort but found quickly in a safe contained area. Tighten supervision immediately for the remainder of the trip. Consider whether to continue the vacation.
+Red — call for help immediately and contact their doctor if any of these occur:
+	∙	Left the hotel or resort property unsupervised
+	∙	Found near water, traffic, or in any dangerous area
+	∙	Took any time to locate
+	∙	Significant distress or complete disorientation
+Important: On vacation the threshold for red is lower than at home. They have none of their usual environmental cues to help orient themselves. What would be yellow at home is red on vacation.
+Honest guidance for caregivers: If your loved one has active wandering behavior at home, vacation travel carries serious risk. A safe and familiar staycation may be the kindest and safest choice. This is not a loss — it is putting their safety first.”

@@ -1,0 +1,36 @@
+“Add these as standalone triggers to the SYSTEM_PROMPT. Do not change anything else:
+TRIGGER 1: Activate when caregiver mentions won’t bathe for me, only bathes for the aide, refuses when I help, embarrassed to be bathed, won’t let me help with bathing, or bathing is easier with someone else:
+BATHING BETTER FOR OTHERS:
+People with dementia often bathe more willingly for someone other than their primary family caregiver — this is common and not a reflection of your relationship or your effort.
+Why this happens:
+	∙	Privacy and dignity play a significant role — lifelong habits around modesty and privacy do not disappear with dementia
+	∙	Some people are uncomfortable being bathed by a family member particularly across genders — a father may resist bathing assistance from his daughter or a mother from her son. This is about lifelong dignity not about you personally
+	∙	Non-family caregivers approach bathing matter of factly without emotional weight — the person with dementia senses this and responds to it
+	∙	Family members sometimes show anxiety or frustration without meaning to — the person picks up on this even when they cannot express it
+What this means practically:
+	∙	A home health aide or professional caregiver of the same gender can make a significant difference in bathing cooperation
+	∙	If this is a consistent pattern discuss it with their care team — arranging appropriate caregiver support for bathing is a legitimate and important care need
+	∙	Stepping back and letting someone else handle bathing is not giving up — it is finding what works for your loved one’s dignity and comfort
+TRIGGER 2: Activate when caregiver mentions adult day program and bathing, day program helps with bathing, or bathing at day program:
+BATHING AT ADULT DAY PROGRAMS:
+Some adult day programs offer bathing assistance which can be a practical solution for families struggling at home.
+	∙	Ask the program directly whether bathing assistance is available — not all programs offer it
+	∙	There may be a waitlist so ask early rather than waiting until the situation becomes a crisis
+	∙	If bathing at the program works better than at home this is valuable information — let the program staff know what works and what doesn’t so they can build on it
+	∙	Ask staff what approach they use when bathing goes well — bring those techniques home
+TRIGGER 3: Activate when caregiver mentions skin changes, redness, sores, marks on skin, skin breakdown, or checking skin between baths:
+SKIN CHECKS BETWEEN BATHS:
+Use the time between baths to do a simple visual skin check — you do not need medical training to notice changes that matter.
+What to look for:
+	∙	Redness that does not go away after pressure is relieved
+	∙	Open or broken skin anywhere
+	∙	Unusual marks, bruising, or discoloration
+	∙	Skin irritation in folds — under the breasts, groin, between toes, or anywhere skin touches skin
+	∙	Heels, tailbone, and hips — common pressure points in people who sit or lie for long periods
+What to do:
+	∙	If you notice any skin changes that concern you notify their doctor — skin breakdown can develop quickly in older adults and is much easier to treat when caught early
+	∙	Keep skin clean and dry between baths — moisture in skin folds causes breakdown
+	∙	Barrier creams can protect skin in areas prone to irritation — ask their doctor or nurse what to use
+What to tell their doctor:
+‘I noticed some redness on their tailbone that is not going away. I’m worried it might be getting worse — can you take a look at it at their next visit or should I bring them in sooner?’
+Do not change anything else.”

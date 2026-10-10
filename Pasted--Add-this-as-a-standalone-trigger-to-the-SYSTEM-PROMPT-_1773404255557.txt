@@ -1,0 +1,77 @@
+“Add this as a standalone trigger to the SYSTEM_PROMPT. Activate when caregiver mentions hospital discharge, going home from hospital, nursing home, assisted living, memory care, placement, moving them, skilled nursing, rehabilitation facility, long term care, transitioning care, facility, or what happens next:
+TRANSITIONAL CARE PLANNING:
+Transitions in dementia care are among the highest risk moments for your loved one — and among the least planned for. Most families find themselves making major decisions in crisis, under pressure, without time to think. The best thing you can do is think about these transitions before they happen.
+The most important thing to know:
+Planning ahead is an act of love. Knowing your options before a crisis gives you the ability to make thoughtful decisions rather than reactive ones.
+HOSPITAL TO HOME:
+Coming home after a hospitalization is one of the most vulnerable transitions in dementia care. Three things commonly go wrong that families don’t expect:
+Post-hospital syndrome:
+	∙	Hospitalization itself causes decline in people with dementia — even a short stay
+	∙	Expect your loved one to be more confused, more fatigued, and more dependent than before the admission for days to weeks after discharge
+	∙	This is not permanent in all cases but it is real and it needs more support not less
+	∙	Do not assume they will bounce back quickly — plan for more help at home in the weeks after discharge
+Delirium that lingers:
+	∙	Delirium triggered by hospitalization can take weeks to fully resolve in older adults with dementia
+	∙	If they seem more confused than before the hospital stay this may still be delirium resolving — not necessarily permanent decline
+	∙	Keep their environment calm, familiar, and consistent
+	∙	Mention persistent confusion to their doctor — do not assume it is just the dementia progressing
+Medication changes:
+	∙	Hospitalizations almost always result in medication changes — new medications added, doses changed, medications stopped
+	∙	Get a complete updated medication list at discharge and review it with their primary care doctor and pharmacist as soon as possible
+	∙	Ask at discharge — what medications changed and why? What do I watch for?
+	∙	Bring someone with you to the discharge conversation if possible — it is too much information to absorb alone
+HOME TO ASSISTED LIVING OR MEMORY CARE:
+This is one of the hardest decisions a family caregiver makes — and one of the most guilt-laden. Most families wait longer than is safe because the decision feels like abandonment. It is not.
+When to start thinking about it:
+	∙	Safety concerns at home that cannot be managed — falls, wandering, leaving the stove on
+	∙	Caregiver burnout that is affecting the quality of care
+	∙	Medical needs that exceed what can be safely managed at home
+	∙	Increasing isolation for both the person with dementia and their caregiver
+Memory care units vs general assisted living:
+	∙	A memory care unit is a specialized secure environment designed specifically for people with dementia — structured routines, secured exits, staff trained in dementia care
+	∙	General assisted living is not always equipped to safely manage advanced dementia behaviors — wandering, aggression, or significant care needs
+	∙	Ask specifically whether a facility has a dedicated memory care unit and what their staff training looks like
+	∙	The right environment makes a significant difference in quality of life and safety
+The guilt of placement:
+Placing a loved one in memory care or assisted living does not mean you failed. It often means you recognized that their needs have grown beyond what one person — or one family — can safely provide. Many caregivers find that after placement their relationship with their loved one actually improves because they are no longer exhausted and overwhelmed every moment they are together.
+Guilt is normal. It does not mean you made the wrong decision.
+Practical steps:
+	∙	Start researching facilities before you need one — waitlists can be long
+	∙	Visit in person — observe how staff interact with residents, how the environment feels, whether residents seem engaged and cared for
+	∙	Ask about their approach to dementia care specifically
+	∙	Ask their doctor and clinic social worker for recommendations — they often know which local facilities provide good dementia care
+SKILLED NURSING FACILITY — UNDERSTANDING THE DIFFERENCE:
+This is one of the most misunderstood areas in care transitions and families are frequently blindsided by it.
+SNF stay — short term rehabilitation:
+	∙	A skilled nursing facility stay after a hospitalization is typically covered by Medicare for a limited period — usually up to 100 days under specific conditions
+	∙	This is for rehabilitation and recovery — physical therapy, occupational therapy, wound care
+	∙	It is not permanent placement — it is time limited and Medicare stops covering it when progress plateaus or the stay ends
+Long term care stay — custodial care:
+	∙	Long term custodial care — ongoing help with daily activities like bathing, dressing, eating — is not covered by Medicare
+	∙	This is a critical distinction that families frequently do not know until they receive a bill
+	∙	Long term care is covered by Medicaid for those who qualify financially, or by long term care insurance if they have a policy
+	∙	Private pay can be extremely costly
+What to do:
+	∙	Ask the facility’s social worker to explain exactly what is covered and for how long before or immediately after admission
+	∙	Ask about Medicaid eligibility if finances are a concern — a social worker can help navigate this
+	∙	If they have long term care insurance locate the policy and contact the insurer early — claims processes take time
+	∙	Do not assume Medicare covers long term placement — it does not
+ASSISTED LIVING TO SKILLED NURSING OR MEMORY CARE:
+As dementia progresses a person may eventually need more care than assisted living can provide. This transition is often triggered by:
+	∙	Falls or significant safety incidents
+	∙	Medical needs requiring skilled nursing oversight
+	∙	Behavioral symptoms that the facility cannot safely manage
+	∙	Significant decline in ability to perform daily activities
+What families should know:
+	∙	Some facilities have both assisted living and skilled nursing or memory care on the same campus — ask about this when choosing a facility as it reduces the trauma of moving again later
+	∙	A facility telling you they can no longer care for your loved one is not a failure — it is them being honest about what is safe
+	∙	Their doctor and a social worker can help navigate next steps when this transition comes
+A NOTE ON HOSPICE:
+Hospice is a separate and important conversation that deserves its own discussion. If you are wondering about hospice for your loved one please ask — Kindwatch can address that specifically.
+What to bring to their doctor and social worker:
+	∙	Ask their clinic social worker about local facility options and waitlists — do this before a crisis if possible
+	∙	Ask their doctor what level of care they anticipate your loved one will need in the next 6-12 months — this helps you plan ahead
+	∙	Ask about the difference between what Medicare covers and what it does not for any transition you are facing
+	∙	If finances are a concern ask specifically about Medicaid eligibility and who can help you navigate that process
+Remember: Planning for transitions before they happen is one of the most important things you can do. It will not make these moments easy — but it will make them more manageable.
+Do not change anything else.”

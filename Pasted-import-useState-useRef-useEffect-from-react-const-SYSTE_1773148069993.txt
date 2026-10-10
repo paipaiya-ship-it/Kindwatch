@@ -1,0 +1,413 @@
+import { useState, useRef, useEffect } from “react”;
+
+const SYSTEM_PROMPT = `You are Vigil, a compassionate and highly knowledgeable AI dementia caregiver coach. You support both family caregivers and professional care staff.
+
+Your role is to:
+
+1. Answer questions about dementia care with warmth, clarity, and evidence-based guidance
+1. Help caregivers handle behavioral episodes (sundowning, agitation, aggression, wandering)
+1. Provide communication techniques for people with dementia
+1. Offer practical daily care routines and activity ideas
+1. Support caregiver wellbeing and stress management
+
+CRITICAL - RED FLAG DETECTION:
+You must carefully analyze every message for signs of DELIRIUM or conditions requiring HOSPITALIZATION.
+
+RED FLAGS FOR DELIRIUM (sudden onset confusion):
+
+- Sudden change in mental status or behavior (hours to days)
+- New or worsening confusion, disorientation
+- Fluctuating consciousness or alertness
+- New visual hallucinations
+- Unusual agitation or sudden calm in someone normally agitated
+- Incoherent speech that is new/changed
+
+RED FLAGS REQUIRING URGENT MEDICAL ATTENTION:
+
+- High fever, chills, signs of infection
+- Difficulty breathing, chest pain
+- Signs of UTI (pain urinating, foul-smelling urine, new confusion)
+- Falls with head injury
+- Not eating/drinking for 24+ hours
+- New weakness on one side, facial drooping, slurred speech (stroke)
+- Severe pain
+- Bleeding
+- Seizures
+- Skin that is very pale, blue, or mottled
+- Unresponsiveness or extreme difficulty waking
+
+IMPORTANT INSTRUCTIONS:
+
+- If you detect ANY red flags, immediately and clearly alert the caregiver at the TOP of your response with a ⚠️ RED FLAG ALERT section
+- In the alert, specify exactly what you detected, what it may indicate, and urge them to call 911 or their doctor immediately
+- Use plain, calm, non-alarmist but firm language
+- After the alert, you can still answer their question
+- For non-urgent questions, provide warm, practical, specific guidance
+- Keep responses clear and actionable — caregivers are often stressed and time-pressed
+- Always validate the caregiver’s feelings and effort
+- Never diagnose — always recommend professional medical assessment for health concerns
+- Format responses with clear sections when helpful. Use **bold** for key points.
+
+Your tone: Warm like a trusted nurse friend. Knowledgeable but never condescending. Always on the caregiver’s side.`;
+
+const SUGGESTED_QUESTIONS = [
+“She keeps asking where her husband is — he passed 10 years ago. What do I do?”,
+“He won’t take his medications. How can I help?”,
+“She’s been unusually confused since this morning and won’t wake up properly”,
+“He’s been aggressive and hitting staff. What techniques can help?”,
+“She hasn’t eaten in two days and seems very sleepy”,
+“What activities are good for late-stage dementia?”,
+“He’s been wandering at night. How do we keep him safe?”,
+“She had a fall this morning and hit her head. She seems okay but confused”,
+];
+
+function AlertBanner({ message }) {
+return (
+<div style={{
+background: “linear-gradient(135deg, #ff3b30, #c0392b)”,
+borderRadius: “12px”,
+padding: “16px 20px”,
+marginBottom: “12px”,
+boxShadow: “0 4px 20px rgba(255,59,48,0.4)”,
+animation: “pulseAlert 2s ease-in-out infinite”,
+border: “1px solid rgba(255,255,255,0.2)”
+}}>
+<div style={{ fontFamily: “‘Fraunces’, Georgia, serif”, fontSize: “15px”, fontWeight: “700”, color: “#fff”, marginBottom: “4px”, letterSpacing: “0.02em” }}>
+⚠️ URGENT — Please Read Carefully
+</div>
+<div style={{ fontSize: “13px”, color: “rgba(255,255,255,0.92)”, lineHeight: “1.5” }}>
+This response contains important health alerts. Review the full message below immediately.
+</div>
+</div>
+);
+}
+
+function Message({ msg }) {
+const isUser = msg.role === “user”;
+const hasAlert = !isUser && msg.content.includes(“⚠️”);
+
+const formatContent = (text) => {
+const lines = text.split(”\n”);
+return lines.map((line, i) => {
+if (line.startsWith(“⚠️”) || line.includes(“RED FLAG ALERT”) || line.includes(“URGENT”)) {
+return <div key={i} style={{ color: “#ff3b30”, fontWeight: “700”, fontSize: “15px”, marginBottom: “6px” }}>{line}</div>;
+}
+const parts = line.split(/(**[^*]+**)/g);
+const formatted = parts.map((part, j) => {
+if (part.startsWith(”**”) && part.endsWith(”**”)) {
+return <strong key={j} style={{ color: isUser ? “#fff” : “#1a3a4a” }}>{part.slice(2, -2)}</strong>;
+}
+return part;
+});
+return <div key={i} style={{ minHeight: line ? “auto” : “8px”, marginBottom: “2px” }}>{formatted}</div>;
+});
+};
+
+return (
+<div style={{
+display: “flex”,
+justifyContent: isUser ? “flex-end” : “flex-start”,
+marginBottom: “20px”,
+alignItems: “flex-start”,
+gap: “10px”,
+animation: “fadeSlideIn 0.3s ease-out”
+}}>
+{!isUser && (
+<div style={{
+width: “36px”, height: “36px”, borderRadius: “50%”, flexShrink: 0,
+background: “linear-gradient(135deg, #2e8b7a, #1a6b5a)”,
+display: “flex”, alignItems: “center”, justifyContent: “center”,
+fontSize: “18px”, boxShadow: “0 2px 8px rgba(46,139,122,0.4)”
+}}>🌿</div>
+)}
+<div style={{ maxWidth: “75%”, minWidth: “80px” }}>
+{hasAlert && <AlertBanner />}
+<div style={{
+background: isUser
+? “linear-gradient(135deg, #2e8b7a, #1a6b5a)”
+: “rgba(255,255,255,0.96)”,
+color: isUser ? “#fff” : “#1a3a4a”,
+borderRadius: isUser ? “18px 18px 4px 18px” : “18px 18px 18px 4px”,
+padding: “14px 18px”,
+fontSize: “14px”,
+lineHeight: “1.65”,
+fontFamily: “‘Lora’, Georgia, serif”,
+boxShadow: isUser
+? “0 4px 16px rgba(46,139,122,0.3)”
+: “0 2px 12px rgba(0,0,0,0.08)”,
+border: hasAlert ? “1px solid rgba(255,59,48,0.3)” : “none”
+}}>
+{formatContent(msg.content)}
+</div>
+<div style={{
+fontSize: “11px”, color: “rgba(100,120,130,0.7)”,
+marginTop: “5px”, textAlign: isUser ? “right” : “left”,
+fontFamily: “system-ui”
+}}>
+{isUser ? “You” : “Vigil”} · {msg.time}
+</div>
+</div>
+{isUser && (
+<div style={{
+width: “36px”, height: “36px”, borderRadius: “50%”, flexShrink: 0,
+background: “linear-gradient(135deg, #4a7fa5, #2d5f82)”,
+display: “flex”, alignItems: “center”, justifyContent: “center”,
+fontSize: “17px”, boxShadow: “0 2px 8px rgba(74,127,165,0.4)”
+}}>👤</div>
+)}
+</div>
+);
+}
+
+function TypingIndicator() {
+return (
+<div style={{ display: “flex”, alignItems: “flex-start”, gap: “10px”, marginBottom: “20px”, animation: “fadeSlideIn 0.3s ease-out” }}>
+<div style={{
+width: “36px”, height: “36px”, borderRadius: “50%”, flexShrink: 0,
+background: “linear-gradient(135deg, #2e8b7a, #1a6b5a)”,
+display: “flex”, alignItems: “center”, justifyContent: “center”, fontSize: “18px”
+}}>🌿</div>
+<div style={{
+background: “rgba(255,255,255,0.96)”, borderRadius: “18px 18px 18px 4px”,
+padding: “16px 20px”, boxShadow: “0 2px 12px rgba(0,0,0,0.08)”
+}}>
+<div style={{ display: “flex”, gap: “5px”, alignItems: “center” }}>
+{[0, 1, 2].map(i => (
+<div key={i} style={{
+width: “7px”, height: “7px”, borderRadius: “50%”,
+background: “#2e8b7a”, animation: `bounce 1.2s ease-in-out ${i * 0.2}s infinite`
+}} />
+))}
+</div>
+</div>
+</div>
+);
+}
+
+export default function DementiaCoach() {
+const [messages, setMessages] = useState([
+{
+role: “assistant”,
+content: “Hello, I’m **Vigil** — your dementia care companion. 🌿\n\nI’m here to support you with practical guidance on dementia care, communication strategies, managing difficult behaviors, and caregiver wellbeing.\n\n**I also monitor our conversations for signs of delirium or medical emergencies**, and will alert you immediately if something needs urgent attention.\n\nWhat’s on your mind today? There’s no question too small.”,
+time: new Date().toLocaleTimeString([], { hour: “2-digit”, minute: “2-digit” })
+}
+]);
+const [input, setInput] = useState(””);
+const [loading, setLoading] = useState(false);
+const [showSuggestions, setShowSuggestions] = useState(true);
+const bottomRef = useRef(null);
+const inputRef = useRef(null);
+const conversationRef = useRef([]);
+
+useEffect(() => {
+bottomRef.current?.scrollIntoView({ behavior: “smooth” });
+}, [messages, loading]);
+
+const sendMessage = async (text) => {
+const userText = text || input.trim();
+if (!userText || loading) return;
+
+```
+const time = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+const userMsg = { role: "user", content: userText, time };
+setMessages(prev => [...prev, userMsg]);
+setInput("");
+setLoading(true);
+setShowSuggestions(false);
+
+conversationRef.current = [...conversationRef.current, { role: "user", content: userText }];
+
+try {
+  const response = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      model: "claude-sonnet-4-20250514",
+      max_tokens: 1000,
+      system: SYSTEM_PROMPT,
+      messages: conversationRef.current
+    })
+  });
+
+  const data = await response.json();
+  const assistantText = data.content?.map(b => b.text || "").join("") || "I'm sorry, I couldn't process that. Please try again.";
+
+  conversationRef.current = [...conversationRef.current, { role: "assistant", content: assistantText }];
+  setMessages(prev => [...prev, { role: "assistant", content: assistantText, time }]);
+} catch (err) {
+  setMessages(prev => [...prev, {
+    role: "assistant",
+    content: "I'm having trouble connecting right now. Please try again in a moment.",
+    time
+  }]);
+} finally {
+  setLoading(false);
+  inputRef.current?.focus();
+}
+```
+
+};
+
+const handleKeyDown = (e) => {
+if (e.key === “Enter” && !e.shiftKey) {
+e.preventDefault();
+sendMessage();
+}
+};
+
+return (
+<div style={{
+minHeight: “100vh”,
+background: “linear-gradient(160deg, #0d2b35 0%, #0f3d4a 40%, #0d2b35 100%)”,
+display: “flex”,
+flexDirection: “column”,
+fontFamily: “‘Lora’, Georgia, serif”,
+position: “relative”,
+overflow: “hidden”
+}}>
+<style>{`@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=Lora:wght@400;500;600&display=swap'); * { box-sizing: border-box; margin: 0; padding: 0; } body { margin: 0; } @keyframes fadeSlideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } } @keyframes bounce { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-6px); } } @keyframes pulseAlert { 0%, 100% { box-shadow: 0 4px 20px rgba(255,59,48,0.4); } 50% { box-shadow: 0 4px 30px rgba(255,59,48,0.7); } } @keyframes shimmer { 0% { background-position: -200% center; } 100% { background-position: 200% center; } } textarea:focus { outline: none; } textarea { resize: none; } ::-webkit-scrollbar { width: 5px; } ::-webkit-scrollbar-track { background: transparent; } ::-webkit-scrollbar-thumb { background: rgba(46,139,122,0.3); border-radius: 10px; } .suggestion-btn:hover { background: rgba(46,139,122,0.25) !important; border-color: rgba(46,139,122,0.6) !important; transform: translateY(-1px); } .send-btn:hover:not(:disabled) { background: linear-gradient(135deg, #3aa090, #2e8b7a) !important; transform: scale(1.05); } .send-btn:disabled { opacity: 0.5; cursor: not-allowed; }`}</style>
+
+```
+  {/* Background texture */}
+  <div style={{
+    position: "absolute", inset: 0, pointerEvents: "none",
+    background: "radial-gradient(ellipse at 20% 50%, rgba(46,139,122,0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(74,127,165,0.06) 0%, transparent 50%)",
+  }} />
+
+  {/* Header */}
+  <div style={{
+    padding: "20px 28px 18px",
+    borderBottom: "1px solid rgba(255,255,255,0.07)",
+    background: "rgba(13,43,53,0.8)",
+    backdropFilter: "blur(20px)",
+    display: "flex", alignItems: "center", justifyContent: "space-between",
+    position: "relative", zIndex: 10
+  }}>
+    <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
+      <div style={{
+        width: "46px", height: "46px", borderRadius: "14px",
+        background: "linear-gradient(135deg, #2e8b7a, #1a6b5a)",
+        display: "flex", alignItems: "center", justifyContent: "center",
+        fontSize: "22px", boxShadow: "0 4px 16px rgba(46,139,122,0.4)"
+      }}>🌿</div>
+      <div>
+        <div style={{
+          fontFamily: "'Fraunces', Georgia, serif",
+          fontSize: "22px", fontWeight: "700", color: "#e8f4f0",
+          letterSpacing: "-0.02em"
+        }}>Vigil</div>
+        <div style={{ fontSize: "12px", color: "rgba(180,220,210,0.7)", letterSpacing: "0.08em", textTransform: "uppercase" }}>
+          Always Watching. Always Ready.
+        </div>
+      </div>
+    </div>
+    <div style={{
+      display: "flex", alignItems: "center", gap: "7px",
+      background: "rgba(46,139,122,0.15)", borderRadius: "20px",
+      padding: "6px 14px", border: "1px solid rgba(46,139,122,0.3)"
+    }}>
+      <div style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#2e8b7a", animation: "pulseAlert 2s ease-in-out infinite" }} />
+      <span style={{ fontSize: "12px", color: "rgba(180,220,210,0.9)", fontFamily: "system-ui", fontWeight: "500" }}>Active monitoring</span>
+    </div>
+  </div>
+
+  {/* Alert notice */}
+  <div style={{
+    background: "rgba(255,59,48,0.1)", borderBottom: "1px solid rgba(255,59,48,0.2)",
+    padding: "8px 28px", display: "flex", alignItems: "center", gap: "8px"
+  }}>
+    <span style={{ fontSize: "13px" }}>⚠️</span>
+    <span style={{ fontSize: "12px", color: "rgba(255,160,150,0.9)", fontFamily: "system-ui" }}>
+      I actively monitor for signs of delirium or medical emergencies and will alert you immediately if I detect red flags.
+    </span>
+  </div>
+
+  {/* Messages */}
+  <div style={{
+    flex: 1, overflowY: "auto", padding: "24px 28px",
+    display: "flex", flexDirection: "column",
+    maxWidth: "860px", width: "100%", margin: "0 auto", alignSelf: "stretch"
+  }}>
+    {messages.map((msg, i) => <Message key={i} msg={msg} />)}
+    {loading && <TypingIndicator />}
+
+    {/* Suggestions */}
+    {showSuggestions && messages.length <= 1 && (
+      <div style={{ marginTop: "8px", animation: "fadeSlideIn 0.5s ease-out 0.3s both" }}>
+        <div style={{ fontSize: "12px", color: "rgba(180,220,210,0.5)", marginBottom: "12px", fontFamily: "system-ui", letterSpacing: "0.06em", textTransform: "uppercase" }}>
+          Common questions
+        </div>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+          {SUGGESTED_QUESTIONS.map((q, i) => (
+            <button key={i} className="suggestion-btn" onClick={() => sendMessage(q)} style={{
+              background: "rgba(255,255,255,0.06)",
+              border: "1px solid rgba(255,255,255,0.12)",
+              borderRadius: "20px", padding: "8px 14px",
+              color: "rgba(220,240,235,0.85)", fontSize: "13px",
+              cursor: "pointer", fontFamily: "'Lora', Georgia, serif",
+              transition: "all 0.2s ease", textAlign: "left", lineHeight: "1.4"
+            }}>
+              {q}
+            </button>
+          ))}
+        </div>
+      </div>
+    )}
+    <div ref={bottomRef} />
+  </div>
+
+  {/* Input */}
+  <div style={{
+    padding: "16px 28px 24px",
+    background: "rgba(13,43,53,0.9)", backdropFilter: "blur(20px)",
+    borderTop: "1px solid rgba(255,255,255,0.07)",
+    position: "relative", zIndex: 10
+  }}>
+    <div style={{ maxWidth: "860px", margin: "0 auto" }}>
+      <div style={{
+        display: "flex", gap: "10px", alignItems: "flex-end",
+        background: "rgba(255,255,255,0.06)",
+        border: "1px solid rgba(255,255,255,0.12)",
+        borderRadius: "16px", padding: "10px 10px 10px 18px",
+        transition: "border-color 0.2s"
+      }}>
+        <textarea
+          ref={inputRef}
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          onKeyDown={handleKeyDown}
+          placeholder="Describe what's happening with your resident or loved one..."
+          rows={1}
+          style={{
+            flex: 1, background: "transparent", border: "none",
+            color: "rgba(230,245,240,0.95)", fontSize: "15px",
+            fontFamily: "'Lora', Georgia, serif", lineHeight: "1.6",
+            maxHeight: "120px", overflowY: "auto",
+            placeholder: "rgba(130,160,155,0.5)"
+          }}
+        />
+        <button
+          className="send-btn"
+          onClick={() => sendMessage()}
+          disabled={!input.trim() || loading}
+          style={{
+            width: "40px", height: "40px", borderRadius: "10px", flexShrink: 0,
+            background: "linear-gradient(135deg, #2e8b7a, #1a6b5a)",
+            border: "none", cursor: "pointer", color: "#fff", fontSize: "16px",
+            display: "flex", alignItems: "center", justifyContent: "center",
+            transition: "all 0.2s ease", boxShadow: "0 2px 10px rgba(46,139,122,0.4)"
+          }}
+        >
+          ↑
+        </button>
+      </div>
+      <div style={{ marginTop: "8px", textAlign: "center", fontSize: "11px", color: "rgba(130,160,155,0.5)", fontFamily: "system-ui" }}>
+        For emergencies, always call 911 immediately · Vigil is an AI assistant, not a substitute for medical care
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+);
+}

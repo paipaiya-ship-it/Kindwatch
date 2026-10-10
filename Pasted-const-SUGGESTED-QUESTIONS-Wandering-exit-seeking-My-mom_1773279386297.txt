@@ -1,0 +1,71 @@
+const SUGGESTED_QUESTIONS = [
+  // Wandering / exit-seeking
+  "My mom keeps trying to leave the house at night. How do I keep her safe?",
+  "He wandered out of the house this morning and got lost. What should I do?",
+  "She keeps pacing and trying to go outside repeatedly.",
+  "My dad walks around the house at 2 a.m. How can I help him sleep?",
+  "He tries to leave when I’m not looking. What strategies can help?",
+
+  // Agitation / aggression
+  "My husband becomes angry and hits me when I help him dress.",
+  "She screams and throws things when asked to bathe. How can I calm her?",
+  "He gets frustrated and yells during meals. What should I do?",
+  "My dad is pacing and seems aggressive in the evenings.",
+  "She grabbed the caregiver today and was aggressive. How do I respond?",
+
+  // Repetitive questioning / memory loops
+  "My mom keeps asking where my dad is — he passed away years ago.",
+  "He keeps asking what time it is every 5 minutes.",
+  "She asks the same question repeatedly and gets frustrated.",
+  "My father repeatedly asks if he can go home. How should I answer?",
+  "He forgets I already told him something. What can I do?",
+
+  // Medication refusal
+  "My dad refuses to take his blood pressure medication. How can I help?",
+  "She spits out her pills and says I’m poisoning her.",
+  "He refuses any medications in the morning. What strategies work?",
+  "My mother hides her pills and won’t take them.",
+  "He gets angry when I try to give him medication. What should I do?",
+
+  // Bathing / hygiene resistance
+  "She refuses to shower and gets upset when I insist.",
+  "My dad hates bathing. How can I help him stay clean?",
+  "He screams during personal care. What are some tips?",
+  "My mom refuses to brush her teeth. How can I handle this?",
+  "He becomes aggressive when I try to wash him. What strategies help?",
+
+  // Hallucinations / paranoia
+  "My mom sees people in the house that aren’t there.",
+  "He thinks someone is stealing from him. How can I calm him?",
+  "She believes there are strangers in the room. What should I do?",
+  "My father is paranoid about visitors. How do I respond?",
+  "He keeps talking about things that aren’t real. How can I reassure him?",
+
+  // Sleep disturbances
+  "My dad is awake all night and sleeps all day.",
+  "She wakes me up every hour during the night.",
+  "He takes long naps and cannot sleep at night.",
+  "My mom’s sleep cycle is completely reversed. What helps?",
+  "He wanders at night and cannot stay in bed. How do I manage this?",
+
+  // Appetite / hydration problems
+  "She hasn’t eaten in two days and seems very sleepy.",
+  "My dad refuses to drink water. What can I do?",
+  "He eats very little and is losing weight. How should I respond?",
+  "My mom refuses food and refuses snacks. What strategies help?",
+  "He keeps spitting out meals. How can I improve his appetite?",
+
+  // Falls / mobility concerns
+  "She had a fall this morning but seems okay. What should I do?",
+  "My dad trips often while walking around the house.",
+  "He fell yesterday and is complaining of pain. Should I call the doctor?",
+  "She struggles with balance and is afraid of falling.",
+  "My father fell and hit his head lightly. What precautions should I take?",
+
+  // Caregiver distress / burnout
+  "I can’t do this anymore. I’m exhausted caring for my mom.",
+  "I feel guilty when I get frustrated with my dad. How can I cope?",
+  "I’m overwhelmed with his behavior and don’t know what to do.",
+  "I feel like I’m failing as a caregiver. How can I manage this stress?",
+  "I’m emotionally drained and need guidance. How can I take care of myself?"
+];

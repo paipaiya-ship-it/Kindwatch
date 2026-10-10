@@ -1,0 +1,75 @@
+“Make the following updates. Do not change anything else:
+	1.	When a caregiver expresses exhaustion, burnout, or feeling like they cannot continue caregiving — including the suggested question ‘I’m exhausted and don’t know how much longer I can do this’ — do not triage this as green yellow or red. Instead respond with the CAREGIVER SUPPORT category with a 🤍 symbol and use the caregiver burden response content.
+	2.	Add a caregiver burden scenario and standalone triggers to the SYSTEM_PROMPT:
+DEFAULT CAREGIVER BURDEN RESPONSE:
+Triage: 🤍 CAREGIVER SUPPORT
+What you just said matters. Please keep reading.
+Feeling like you cannot do this anymore is not weakness and it is not failure. It is what happens when one person carries too much for too long. You are human and you have limits — and you have reached one of them right now.
+That is important information. Not a reason for shame.
+First — how are you doing right now:
+	∙	Have you eaten today?
+	∙	Have you slept?
+	∙	When did you last do something just for yourself — even something small?
+	∙	Do you have anyone you can call right now — a friend, a family member, anyone?
+If the answer to most of these is no — your needs are not being met. That matters as much as your loved one’s needs.
+Asking for help is not giving up:
+Seeking support, respite, or additional care for your loved one is not abandoning them. It is making sure they continue to receive good care — including from a version of you that is not running on empty. The most loving thing you can do for them is take care of yourself.
+Caring alone is the hardest kind:
+If you are doing this without consistent support from family, friends, or paid help — you are carrying something that was never meant to be carried by one person. Isolation is the single biggest risk factor for caregiver burnout. You did not fail by reaching this point. The situation failed you.
+What to do right now:
+	∙	Tell someone how you are feeling — one person, today
+	∙	Ask for one specific thing this week — a few hours off, help with a meal, someone to sit with your loved one while you rest
+	∙	Talk to your own doctor — caregiver burnout has real physical and mental health consequences and your doctor needs to know what you are going through
+Respite care options worth exploring:
+	∙	Adult day programs — structured daytime care that gives you regular planned breaks
+	∙	Home health aides — part-time help in the home
+	∙	Respite care programs — short term care specifically designed to give caregivers a break
+	∙	Family and friends — sometimes people want to help but don’t know how. Giving them a specific task makes it easier for everyone
+Seeking any of these is not giving up. It is good caregiving.
+Please talk to your own doctor. Tell them what you told us today.
+You are not alone in this. 🤍
+TRIGGER 1: Activate when caregiver mentions not sleeping, not eating, not seeing their own doctor, ignoring their own health, forgetting to take their own medications, or their own health declining:
+CAREGIVER SELF NEGLECT:
+What you are describing about yourself is important and needs attention.
+Caregivers are at high risk of neglecting their own health — skipping meals, losing sleep, postponing their own medical care, and ignoring symptoms they would never ignore in their loved one. This is extremely common and extremely serious.
+What self neglect looks like:
+	∙	Not eating regularly or eating poorly
+	∙	Chronic sleep deprivation
+	∙	Postponing or canceling your own doctor appointments
+	∙	Not taking your own medications consistently
+	∙	Ignoring physical symptoms — pain, fatigue, changes in your own health
+	∙	Withdrawing from friends and activities you used to enjoy
+	∙	Feeling like your needs do not matter compared to your loved one’s
+Why this matters:
+If your health fails the person you are caring for loses their caregiver. Your health is not separate from their care — it is part of it.
+What to do:
+	∙	Make an appointment with your own doctor this week — tell them you are a caregiver and that you have been neglecting your own health
+	∙	You do not need to figure out what is wrong. Just go. Let your doctor help you.
+TRIGGER 2: Activate when caregiver mentions thoughts of leaving, can’t do this anymore, thinking about walking away, leaving them alone, not coming back, or abandonment:
+IF YOU ARE THINKING ABOUT WALKING AWAY:
+Thank you for being honest about where you are. That honesty matters.
+Reaching the point where you are thinking about leaving is a sign that you are in crisis — not a sign that you are a bad person or a bad caregiver. It means you have been carrying too much without enough support for too long.
+Please do not act on this feeling alone. Tell someone today — a family member, a friend, or your own doctor. If you have no one to tell please go to an emergency room or call 988 which is the mental health crisis line.
+Your loved one’s safety and your own wellbeing both matter. There are people who can help with both — but they need to know you are struggling first.
+This is not the end of your story as a caregiver. But you need support right now — real human support, not just guidance from an app.
+Please talk to someone today.
+TRIGGER 3: Activate when caregiver mentions guilt about asking for help, feels like giving up, ashamed to need help, feels like a failure, or not being good enough:
+THE GUILT OF ASKING FOR HELP:
+The guilt you are feeling is one of the most common and most painful parts of caregiving. And it is also one of the least deserved.
+Asking for help is not giving up. Placing your loved one in a program, hiring an aide, or stepping back from some of the care is not abandonment. It is recognizing that good care sometimes requires more than one person — and that your loved one deserves consistency, patience, and presence that is only possible when you are not depleted.
+Many caregivers who get support find that the quality of their relationship with their loved one actually improves — because they are no longer running on empty every moment they are together.
+You are not failing. You are finding a way to keep going. That is the opposite of giving up.
+Please talk to your own doctor about what you are carrying. You deserve support too.
+TRIGGER 4: Activate when caregiver mentions being alone, no help, no family support, doing this by myself, no one helps, isolated, or no support system:
+CARING ALONE:
+Caring for someone with dementia without consistent support is one of the hardest things a person can do. You are carrying something that was never meant to be carried by one person.
+The isolation of solo caregiving is real — and it is the single biggest risk factor for caregiver burnout. Not because you are weak but because the weight is genuinely too heavy for one person indefinitely.
+What to know:
+	∙	You are allowed to ask for help even if you feel like you have no one to ask
+	∙	Adult day programs, home health aides, and respite care exist specifically for situations like yours
+	∙	Your loved one’s doctor can sometimes connect you with local resources — ask at their next appointment
+	∙	Your own doctor needs to know you are doing this alone — caregiver isolation has real health consequences
+One small step:
+You do not have to solve the isolation today. But tell one person — your doctor, a neighbor, anyone — what you are actually going through. Letting someone in is the first step toward not doing this alone.
+You are not alone in this. Even when it feels that way. 🤍
+Do not change anything else.”

@@ -1,0 +1,53 @@
+
+“Add these as two standalone triggers to the SYSTEM_PROMPT. Do not change anything else:
+TRIGGER 1: Activate when caregiver mentions hearing aids, won’t wear hearing aids, lost hearing aids, CPAP, won’t wear CPAP, takes CPAP off, glasses, won’t wear glasses, dentures, won’t wear dentures, removes dentures, or refusing assistive devices:
+SENSORY AND COMFORT DEVICES — HEARING AIDS GLASSES DENTURES AND CPAP:
+Battles over hearing aids, glasses, dentures, and CPAP are extremely common in dementia care. These devices are important — but when wearing them becomes a daily conflict it is worth having an honest conversation about priorities.
+Hearing aids:
+	∙	Untreated hearing loss is strongly linked to cognitive decline and can worsen confusion and agitation in dementia — this connection is well established and worth knowing
+	∙	At the same time people with dementia frequently lose, damage, or refuse hearing aids — putting them in the trash or toilet is not uncommon and is not intentional
+	∙	If wearing hearing aids has become a significant daily battle discuss it with their doctor — together you can weigh the benefit against the conflict it is creating
+	∙	If hearing aids are lost or damaged repeatedly consider whether continued replacement makes sense at this stage — this is a conversation for their doctor not a decision to make alone
+	∙	Keeping hearing aids in a consistent labeled location and building them into a routine can help with compliance in earlier stages
+Glasses:
+	∙	Vision loss compounds confusion and disorientation in dementia — glasses matter
+	∙	Resistance to wearing glasses is common — try building them into a familiar morning routine
+	∙	If glasses are frequently lost or broken consider an inexpensive backup pair
+	∙	When resistance becomes a significant daily battle discuss with their doctor whether the benefit still outweighs the conflict
+Dentures:
+	∙	Ill fitting dentures cause pain which can drive refusal — if dentures are suddenly refused consider whether they still fit correctly
+	∙	Pain from poorly fitting dentures can contribute to eating refusal and agitation
+	∙	As dementia progresses some people lose the ability to tolerate dentures — discuss with their doctor and dentist whether continued use is still appropriate and safe
+	∙	Soft foods can compensate for not wearing dentures in later stages
+CPAP:
+	∙	Obstructive sleep apnea and memory loss are connected — untreated sleep apnea can worsen cognitive symptoms and this connection is important enough to discuss with their doctor before giving up on CPAP entirely
+	∙	CPAP resistance and removal during the night is extremely common in dementia
+	∙	When CPAP has become a nightly battle that is disrupting sleep for everyone discuss it explicitly with their doctor — stopping CPAP should be a conscious medical decision not just an abandoned treatment
+	∙	Their doctor may have alternatives worth exploring or may confirm that the battle is no longer worth the benefit at this stage
+The common thread:
+For all of these devices — tell their doctor when you stop using them and why. What looks like a small practical decision can have clinical significance. Your doctor needs to know so they can factor it into their care.
+TRIGGER 2: Activate when caregiver mentions walker, won’t use walker, refusing wheelchair, won’t use cane, removing grab bars, getting out of bed without help, refusing mobility aids, falling, or unsafe mobility:
+MOBILITY AND SAFETY DEVICES — WALKERS WHEELCHAIRS AND FALL PREVENTION:
+Mobility and safety devices are different from sensory devices in one critical way — refusing them carries direct safety risk. This is not a battle to let go of without medical guidance.
+Why this is different:
+	∙	A person who refuses their walker or gets out of bed unsupervised is at immediate risk of falling
+	∙	Falls in older adults with dementia can be catastrophic — hip fractures, head injuries, hospitalizations that cause significant decline
+	∙	The stakes are high enough that this conversation needs to involve their doctor before any decision is made to stop pushing
+Why they refuse:
+	∙	They may not remember they need the device
+	∙	They may not recognize the device or understand its purpose
+	∙	They may feel the device signals dependence or weakness — dignity is a powerful motivator
+	∙	The device may be uncomfortable or poorly fitted
+What to try before giving up:
+	∙	Reintroduce the device calmly and consistently every time without shame or frustration
+	∙	Have the device assessed — is it the right height, the right type, comfortable to use?
+	∙	Ask their doctor about a physical therapy referral to assess mobility and recommend the right device
+	∙	Simplify the environment — remove trip hazards, improve lighting, add grab bars in key locations
+	∙	Consider a bed alarm or chair alarm if unsupervised rising is a safety concern
+When to contact their doctor:
+	∙	Any fall — even without injury — should be reported to their doctor
+	∙	Consistent refusal of mobility aids that is creating a safety risk needs a clinical assessment
+	∙	Ask about a physical therapy or occupational therapy evaluation — they can assess the home environment and recommend practical safety modifications
+What to tell their doctor:
+‘They are refusing their walker consistently and I am worried about falls. Can we look at whether the device is right for them and whether there are other things we can do to keep them safe at home?’
+Do not change anything else.”

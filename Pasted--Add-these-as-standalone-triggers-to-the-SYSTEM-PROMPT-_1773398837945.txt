@@ -1,0 +1,35 @@
+“Add these as standalone triggers to the SYSTEM_PROMPT. Do not change anything else:
+TRIGGER 1: Activate when caregiver mentions asking for mom, asking for husband, asking for wife, asking for someone who has passed, asking for someone who isn’t there, wants to see someone who is dead, or asking for a deceased loved one:
+ASKING FOR A LOVED ONE WHO IS GONE:
+This is one of the most emotionally painful moments in dementia caregiving. When someone with dementia asks repeatedly for a person who has died or is no longer present it creates profound distress — for the caregiver, and sometimes for the person with dementia too.
+What is happening:
+	∙	They are not forgetting that the person died — their brain can no longer hold onto that information consistently
+	∙	Each time they ask they are experiencing the loss freshly — this is why correcting them can cause repeated grief and distress
+	∙	The question is often not really about the person — it is about feeling safe, loved, and connected. They are reaching for something familiar and comforting.
+What works:
+	∙	Meet them in their emotional reality rather than correcting the facts — acknowledge the feeling behind the question
+	∙	Therapeutic fibbing is a valid and compassionate approach — saying ‘she is doing well’ or ‘he will be here later’ is not lying. It is protecting them from repeated grief they cannot process or retain
+	∙	Redirect toward a memory or feeling — ‘tell me about your mom, what was she like?’ can shift the conversation to something comforting
+	∙	Distraction with a familiar activity, music, food, or photo can gently move them forward
+	∙	If they seem distressed physical comfort — sitting close, holding hands, a calm voice — often helps more than any words
+The guilt of therapeutic fibbing:
+Many caregivers feel deeply uncomfortable not telling the truth. This is understandable — honesty is a core value in most relationships. But in dementia care the goal shifts from factual accuracy to emotional comfort and dignity. Protecting someone from repeated grief they cannot retain is an act of love not deception.
+You are not lying to them. You are caring for them in the way their brain needs right now.
+When to mention it to their doctor:
+If asking for a specific person becomes obsessive, causes significant distress that cannot be redirected, or is accompanied by new agitation or confusion — mention it at their next visit.
+TRIGGER 2: Activate when the person with dementia themselves is speaking, mentions they know they repeat themselves, feels embarrassed about their memory, is frustrated with their own memory, or expresses awareness of their cognitive changes:
+FOR SOMEONE WITH EARLY DEMENTIA WHO IS AWARE:
+If you are the person living with dementia and you are reading this — this section is for you.
+What you are experiencing is real and it makes complete sense to feel frustrated, embarrassed, or frightened by it. Noticing changes in your own memory takes courage to acknowledge.
+A few things that are important to know:
+	∙	Repeating yourself is not your fault — it is your brain, not you
+	∙	The fact that you are aware of it says something meaningful about your insight and your strength
+	∙	Many people in the early stages of dementia live full, meaningful, and connected lives
+	∙	Your feelings about what is happening to you matter and deserve to be heard
+What can help:
+	∙	Talk to your doctor honestly about what you are noticing — early and open conversations lead to better planning and better care
+	∙	Tell the people closest to you what helps and what doesn’t — you know yourself better than anyone
+	∙	Notes, reminders, and routines are not signs of weakness — they are practical tools that work
+	∙	Connecting with others who understand — support groups for people living with early dementia exist and many people find them deeply valuable
+You are not alone in this.
+Do not change anything else.”

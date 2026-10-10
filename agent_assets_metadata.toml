@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "h4yu5u1mlRY4q-A6eOxZE"
+uri = "file://client/src/SYSTEM_PROMPT_DRAFT.md"
+type = "text"
+title = "Kindwatch System Prompt — Optimized Draft (9,823 words)"

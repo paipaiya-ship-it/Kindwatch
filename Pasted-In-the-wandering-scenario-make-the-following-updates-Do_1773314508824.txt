@@ -1,0 +1,43 @@
+In the wandering scenario make the following updates. Do not change anything else:
+	1.	Add to safety steps: ‘Consider a GPS wearable device designed specifically for dementia wandering — these provide real time location tracking and are more reliable than an ID bracelet alone in an exit emergency. Keep a recent photo and brief description of your loved one easily accessible — on your phone and printed at home. If they do wander and you need to call police, having this ready saves critical time.’
+	2.	Add to the underlying causes section: ‘Always ask: has there been a recent change in environment, routine, or medications? Nighttime wandering that starts suddenly or worsens suddenly is yellow at minimum and may indicate an underlying medical cause including pain, infection, or medication side effect.’
+	3.	Replace any existing outdoor wandering risk flag with this:
+If your loved one has wandered outside, ask these three questions before determining the risk level:
+Were they safe? — no traffic risk, no weather risk, no fall, no dangerous environment
+Were they oriented? — did they know where they were or were they confused and lost
+Did they return easily? — came back on their own or with gentle redirection
+Yellow — all three yes: they were safe, oriented, and returned easily. This is still a warning sign. Strengthen all security measures immediately and mention to their doctor at the next visit. No urgent call needed.
+Yellow escalating to red — any of the following: found confused and disoriented, could not find their way back independently, found in an unsafe location regardless of distance, required police or extensive searching, nighttime wandering in poor weather or dangerous conditions.
+Red — call their doctor today: injury occurred, found in dangerous conditions, significant distress, hypothermia risk, police involvement, or completely disoriented with no awareness of where they were or how to get home.
+Important: Distance alone does not determine risk. A person who walks to a familiar neighbor’s house or a corner store they have visited for years is very different from someone found two blocks away confused and unable to find their way home. Always assess safety, orientation, and ease of return — not just how far they went.
+	4.	Add this as a specific context trigger. Activate when caregiver mentions adult day program, day program, senior center, or staff reporting wandering behavior:
+WANDERING AT ADULT DAY PROGRAMS:
+Wandering and exit seeking at an adult day program requires immediate communication between the program and the caregiver.
+Why it happens in this setting:
+	∙	Unfamiliar environment triggers the urge to leave and go somewhere familiar
+	∙	Belief they need to be somewhere — work, home, picking up children
+	∙	Anxiety in a group setting they don’t fully understand
+	∙	Boredom or understimulation during the program day
+	∙	Not recognizing staff or other participants increases fear and exit seeking
+What caregivers should ask program staff:
+	∙	What time of day does it happen — morning arrival is the most common as they haven’t settled yet
+	∙	What triggers it — specific activities, certain people, certain times
+	∙	How is it being managed currently
+	∙	Is the program able to safely supervise someone with active exit seeking behavior
+What caregivers can do:
+	∙	Share what works at home — specific redirections, calming phrases, favorite activities
+	∙	Consider a later arrival time if morning is the hardest period
+	∙	Ask about the program’s secured environment — are exits alarmed, is supervision adequate
+	∙	Provide a comfort item they can carry that provides reassurance
+If they exit the program, ask these three questions:
+Were they safe? — remained on property or in a contained area, no traffic or danger
+Were they oriented? — knew where they were or responded to redirection quickly
+Did staff redirect them easily? — returned without significant resistance or distress
+Yellow — all three yes: review the program’s safety measures, discuss with staff, and mention to their doctor at the next visit. No urgent call needed.
+Red — contact their doctor and reassess the program if any of these occur:
+	∙	Got off property into an unsafe area
+	∙	Staff could not redirect or locate them quickly
+	∙	Significant distress, confusion, or disorientation during the episode
+	∙	Happening repeatedly despite staff intervention
+	∙	Other participants were put at risk
+Important: One easily redirected exit attempt is a warning sign not an emergency. Repeated or unsafe exits mean the current program level of care needs to be reassessed. This is not a failure — it is a safety decision. Discuss with their doctor whether the current program is appropriate or whether a more secure memory care day program is needed.”
