@@ -4,7 +4,7 @@ import { createHash } from "node:crypto";
 import { SYSTEM_PROMPT } from "./kindwatchPrompt";
 import { MAX_MESSAGES, MAX_MESSAGE_LENGTH, MAX_CONVERSATION_LENGTH } from "../shared/chatPolicy";
 
-export const CHAT_MODEL = "claude-sonnet-4-20250514";
+export const CHAT_MODEL = "claude-sonnet-5-5";
 export const PROMPT_VERSION = createHash("sha256").update(SYSTEM_PROMPT).digest("hex").slice(0, 16);
 export const chatSchema = z.object({
   messages: z.array(z.object({

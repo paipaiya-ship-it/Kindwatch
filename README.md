@@ -50,7 +50,7 @@ Replit deployment must be initiated separately.
 ## Chat behavior and limits
 
 The browser sends only `messages`. The server owns the clinical prompt,
-`claude-sonnet-4-20250514`, and the 1,000 output-token limit.
+`claude-sonnet-5-5`, and the 1,000 output-token limit.
 Attempts to supply a replacement system prompt, model, or token limit are rejected.
 
 To control cost, each request includes at most the last **six individual messages**,
