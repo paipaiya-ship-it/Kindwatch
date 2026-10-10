@@ -14,7 +14,7 @@ declare module "http" {
 
 app.use(
   express.json({
-    limit: "5mb",
+    limit: "128kb",
     verify: (req, _res, buf) => {
       req.rawBody = buf;
     },
@@ -62,8 +62,8 @@ app.use((req, res, next) => {
 
 (async () => {
   try {
-    if (!process.env.ANTHROPIC_API_KEY) {
-      console.warn("[startup] WARNING: ANTHROPIC_API_KEY is not set — /api/chat will return errors");
+    if (!process.env.OPENAI_API_KEY) {
+      console.warn("[startup] WARNING: OPENAI_API_KEY is not set — /api/chat will return errors");
     }
 
     await registerRoutes(httpServer, app);
@@ -104,7 +104,7 @@ app.use((req, res, next) => {
       {
         port,
         host: "0.0.0.0",
-        reusePort: true,
+        reusePort: process.platform !== "win32",
       },
       () => {
         log(`serving on port ${port}`);
@@ -115,3 +115,4 @@ app.use((req, res, next) => {
     process.exit(1);
   }
 })();
+

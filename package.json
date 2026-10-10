@@ -4,10 +4,12 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development tsx server/index.ts",
+    "dev": "tsx script/dev.ts",
     "build": "tsx script/build.ts",
-    "start": "NODE_ENV=production node dist/index.cjs",
+    "start": "node script/start.cjs",
     "check": "tsc",
+    "test": "tsx --test tests/reliability.test.ts",
+    "smoke": "node tests/production-smoke.mjs",
     "db:push": "drizzle-kit push"
   },
   "dependencies": {
@@ -109,3 +111,4 @@
     "bufferutil": "^4.0.8"
   }
 }
+
